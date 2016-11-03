@@ -1,6 +1,6 @@
 # GoogleNotification
 
-A Robot that keep you synchronized with the news you cared.
+A Slack Robot that keeps you synchronized with the news you are caring about.
 
 
 To Run this Project follow these steps:
@@ -14,3 +14,5 @@ To Run this Project follow these steps:
 3. create a slack channel and get the slack token
    Create a channel: https://get.slack.help/hc/en-us/articles/201402297-Creating-a-channel
    Get the slack token: https://api.slack.com/docs/oauth-test-tokens
+
+4. Open the parameters.py and fill in all the confidential of yours.
