@@ -13,4 +13,4 @@ To Run this Project follow these steps:
 
 3. create a slack channel and get the slack token
    Create a channel: https://get.slack.help/hc/en-us/articles/201402297-Creating-a-channel
-   Get teh slack token: https://api.slack.com/docs/oauth-test-tokens
+   Get the slack token: https://api.slack.com/docs/oauth-test-tokens
