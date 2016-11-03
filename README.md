@@ -15,4 +15,4 @@ To Run this Project follow these steps:
    Create a channel: https://get.slack.help/hc/en-us/articles/201402297-Creating-a-channel
    Get the slack token: https://api.slack.com/docs/oauth-test-tokens
 
-4. Open the parameters.py and fill in all the confidential of yours.
+4. Open the parameters.py and fill in all the confidential of yours and feel free to customize the SEARCH_KEY_WORD.
