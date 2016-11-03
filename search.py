@@ -1,6 +1,8 @@
 from googleapiclient.discovery import build
 import pprint
 
+
+#place your own api key & cse id here
 my_api_key = ""
 my_cse_id = ""
 
@@ -9,7 +11,8 @@ def google_search(search_term, api_key, cse_id, **kwargs):
     res = service.cse().list(q=search_term, cx=cse_id, **kwargs).execute()
     return res['items']
 
-results = google_search(
-    'apple', my_api_key, my_cse_id, num=10)
-for result in results:
-    pprint.pprint(result)
+def do_search(key_word):
+    results = google_search(
+        key_word, my_api_key, my_cse_id, num=10)
+    for result in results:
+        pprint.pprint(result)
