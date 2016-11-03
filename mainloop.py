@@ -2,12 +2,13 @@ import time
 import sys
 import traceback
 from search import do_search
+from parameters import SEARCH_KEY_WORD
 
 if __name__ == "__main__":
     while True:
         print("{}: Starting scrape cycle".format(time.ctime()))
         try:
-            do_search("Apple")
+            do_search(SEARCH_KEY_WORD)
         except KeyboardInterrupt:
             print("Exiting....")
             sys.exit(1)

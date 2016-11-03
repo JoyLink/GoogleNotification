@@ -6,4 +6,4 @@ MY_CSE_ID = "YOUR-CSE-ID"
 
 SLACK_CHANNEL = "#googlenotification"
 
-
+SEARCH_KEY_WORD = "Apple"
