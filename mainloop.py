@@ -7,7 +7,7 @@ if __name__ == "__main__":
     while True:
         print("{}: Starting scrape cycle".format(time.ctime()))
         try:
-            do_search()
+            do_search("Apple")
         except KeyboardInterrupt:
             print("Exiting....")
             sys.exit(1)

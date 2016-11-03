@@ -1,12 +1,10 @@
 from googleapiclient.discovery import build
 from filter import do_filter
-import pprint
 from slackBot import push_notification
+from parameters import MY_API_KEY, MY_CSE_ID
 
 
-#place your own api key & cse id here
-my_api_key = ""
-my_cse_id = ""
+
 
 def google_search(search_term, api_key, cse_id, **kwargs):
     service = build("customsearch", "v1", developerKey=api_key)
@@ -15,7 +13,7 @@ def google_search(search_term, api_key, cse_id, **kwargs):
 
 def do_search(key_word):
     results = google_search(
-        key_word, my_api_key, my_cse_id, num=10)
+        key_word, MY_API_KEY, MY_CSE_ID, num=10)
 
     filteredresults = do_filter(results)
 

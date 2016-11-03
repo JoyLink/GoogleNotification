@@ -27,7 +27,7 @@ Session = sessionmaker(bind=engine)
 session = Session()
 
 
-def do_filter(self, results):
+def do_filter(results):
     filteredresult = []
     for result in results:
         listing = session.query(Listing).filter_by(link=result["link"]).first()

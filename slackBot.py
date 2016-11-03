@@ -1,15 +1,14 @@
 from slackclient import SlackClient
-
-SLACK_TOKEN = "ENTER_TOKEN_HERE"
-
-SLACK_CHANNEL = "#googlenotification"
+from parameters import SLACK_CHANNEL, SLACK_TOKEN
 
 
-def push_notification(self, notifications):
+
+
+def push_notification( notifications):
 
     sc = SlackClient(SLACK_TOKEN)
     for notification in notifications:
-        desc = "{4} | <{6}>".format(notification["htmlTitle"], notification["link"])
+        desc = "{0} | <{1}>".format(notification["htmlTitle"], notification["link"])
         sc.api_call(
             "chat.postMessage",
             channel=SLACK_CHANNEL,
